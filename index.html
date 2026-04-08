@@ -1,10 +1,342 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <title>OpenStartX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenStartX｜夜間公司登記顧問</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: #0f172a;
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.3;
+      margin: 0 0 20px;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: #fcd34d;
+      margin-top: 10px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #fcd34d;
+      color: #111827;
+    }
+
+    .btn-secondary {
+      border: 1px solid #ffffff;
+      color: white;
+    }
+
+    .section {
+      padding: 70px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #475569;
+      font-size: 15px;
+    }
+
+    .pricing-featured {
+      background: #0f172a;
+      color: white;
+    }
+
+    .pricing-featured p,
+    .pricing-featured li {
+      color: #e2e8f0;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 16px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fde68a;
+      color: #111827;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .testimonial-section {
+      background: white;
+    }
+
+    .faq-item {
+      margin-bottom: 16px;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .contact {
+      background: #fef3c7;
+      text-align: center;
+    }
+
+    .contact-box {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .contact-box div {
+      margin: 10px 0;
+    }
+
+    .footer-note {
+      margin-top: 24px;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-4,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>快速創業服務</h1>
-  <p>公司登記代辦｜晚上也可諮詢｜立即聯絡</p>
+
+  <section class="hero">
+    <div class="container">
+      <h1>
+        公司登記顧問
+        <span>下班後也能問的創業顧問</span>
+      </h1>
+      <p>
+        晚上才有時間思考創業？不用等明天。17:30–22:00 即時回覆，
+        先幫你判斷要不要開公司，再決定是否設立。
+      </p>
+      <div class="btn-group">
+        <a href="#contact" class="btn btn-primary">現在就問（不用等明天）</a>
+        <a href="#pricing" class="btn btn-secondary">查看夜間方案</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-4">
+      <div class="card">
+        <h3>公司設立代辦</h3>
+        <p>晚上也能處理：有限公司、股份有限公司、行號設立流程協助，文件整理與送件流程一次搞定。</p>
+      </div>
+      <div class="card">
+        <h3>創業類型評估</h3>
+        <p>先釐清你適合開公司、行號，還是先以個人接案，避免一開始就走錯。</p>
+      </div>
+      <div class="card">
+        <h3>即時諮詢（晚間）</h3>
+        <p>17:30–22:00 即時回覆，當下幫你判斷是否需要設立與怎麼設。</p>
+      </div>
+      <div class="card">
+        <h3>急件優先處理</h3>
+        <p>今晚就想問？提供急件優先回覆與加速安排。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2 class="section-title">夜間諮詢方案</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="badge">熱門</div>
+          <h3>夜間快速諮詢</h3>
+          <div class="price">NT$1,200</div>
+          <ul>
+            <li>30分鐘夜間諮詢（17:30–22:00）</li>
+            <li>公司/行號判斷</li>
+            <li>流程與風險說明</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="margin-top:20px;">現在預約</a>
+        </div>
+
+        <div class="card pricing-featured">
+          <div class="badge">建議方案</div>
+          <h3>設立代辦</h3>
+          <div class="price">NT$6,800 起</div>
+          <ul>
+            <li>名稱預查協助</li>
+            <li>文件整理</li>
+            <li>流程代辦</li>
+            <li>進度回報</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="margin-top:20px;">現在預約</a>
+        </div>
+
+        <div class="card">
+          <div class="badge">高級方案</div>
+          <h3>創業起手式</h3>
+          <div class="price">NT$12,800 起</div>
+          <ul>
+            <li>代辦 + 結構建議</li>
+            <li>營業項目建議</li>
+            <li>全程陪跑</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="margin-top:20px;">現在預約</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonial-section">
+    <div class="container">
+      <h2 class="section-title">客戶回饋</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p>「晚上才有空詢問，當下就得到明確建議，少走很多彎路。」</p>
+          <strong>— 電商創業者</strong>
+        </div>
+        <div class="card">
+          <p>「下班後也能問，流程很清楚，代辦很快完成。」</p>
+          <strong>— 接案設計師</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">常見問題</h2>
+      <div class="faq-item card">
+        <h3>晚上真的可以詢問嗎？</h3>
+        <p>可以，服務時間為 17:30–22:00，專為上班族設計。</p>
+      </div>
+      <div class="faq-item card">
+        <h3>多久可以完成？</h3>
+        <p>依案件不同，一般流程會先說明時程，急件可優先處理。</p>
+      </div>
+      <div class="faq-item card">
+        <h3>一定要代辦嗎？</h3>
+        <p>不一定，很多人先做諮詢就能自行處理。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">今晚就可以開始詢問</h2>
+      <p>把聯絡方式換成你的，今晚就能開始接單。</p>
+      <div class="contact-box">
+        <div>LINE：@418qgxse</div>
+        <div>Email：openstartX@gmail.com</div>
+      </div>
+      <div class="footer-note">
+        建議下一步再加入 LINE 連結、表單、收款資訊與案例內容。
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
